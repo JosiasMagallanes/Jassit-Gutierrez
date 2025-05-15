@@ -5,55 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jassit Gutiérrez - Futbolista</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-        header {
-            background-color: #1d3557;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            background-color: #457b9d;
-            display: flex;
-            justify-content: center;
-        }
-        nav a {
-            color: white;
-            padding: 14px 20px;
-            text-decoration: none;
-        }
-        nav a:hover {
-            background-color: #1d3557;
-        }
-        section {
-            padding: 40px 20px;
-            max-width: 1000px;
-            margin: auto;
-        }
-        .gallery img {
-            width: 100%;
-            max-width: 300px;
-            margin: 10px;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-        }
-        footer {
-            background-color: #1d3557;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+
+<!-- Redes sociales flotantes -->
+<div class="social-bar">
+    <a href="https://www.instagram.com/jassittt99" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+    <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+</div>
 
 <header>
     <h1>Jassit Gutiérrez</h1>
@@ -62,42 +24,49 @@
 
 <nav>
     <a href="#biografia">Biografía</a>
-    <a href="#trayectoria">Trayectoria</a>
+    <a href="#logros">Logros</a>
     <a href="#galeria">Galería</a>
     <a href="#contacto">Contacto</a>
 </nav>
 
+
 <section id="biografia">
     <h2>Biografía</h2>
-    <p>Jassit Gutiérrez es un talentoso futbolista panameño que forma parte de la selección nacional Sub-17 de Panamá y juega en la Sub-16 del Sporting San Miguelito. Desde niño soñó con destacar en el fútbol, y hoy es considerado una de las jóvenes promesas del deporte en su país.</p>
+    <p>Nacido en Panamá, 5 de febrero de 2008. Aquí puedes cambiar fácilmente la biografía en el archivo HTML.</p>
 </section>
 
-<section id="trayectoria">
-    <h2>Trayectoria</h2>
-    <ul>
-        <li>Sporting San Miguelito Sub-16</li>
-        <li>Selección Nacional Sub-17 de Panamá</li>
-        <li>Participaciones en torneos internacionales juveniles</li>
-    </ul>
+
+<section id="logros">
+    <h2>Logros</h2>
+    <div class="logros">
+        <div>
+            <div class="logro"><i class="fas fa-trophy"></i></div>
+            <p>Ejemplo de logros aquí</p>
+        </div>
+    </div>
 </section>
 
 <section id="galeria">
     <h2>Galería</h2>
     <div class="gallery">
-        <img src="https://via.placeholder.com/300x200?text=Jassit+1" alt="Jassit jugando">
-        <img src="https://via.placeholder.com/300x200?text=Jassit+2" alt="Entrenamiento">
-        <img src="https://via.placeholder.com/300x200?text=Jassit+3" alt="Celebración de gol">
+        <img src="img/jassit1.jpg" alt="Jassit jugando" onclick="openLightbox(this.src)">
     </div>
 </section>
 
 <section id="contacto">
     <h2>Contacto</h2>
-    <p>Sígueme en Instagram: <a href="https://www.instagram.com/jassittt99" target="_blank">@jassittt99</a></p>
+    <p>Instagram: <a href="https://www.instagram.com/jassittt99" target="_blank">@jassittt99</a></p>
 </section>
 
 <footer>
-    <p>&copy; 2025 Jassit Gutiérrez. Todos los derechos reservados.</p>
+    <p>&copy; 2025 Jassit Gutiérrez</p>
 </footer>
+
+<!-- Lightbox básico -->
+<div id="lightbox" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.9);justify-content:center;align-items:center;z-index:2000;" onclick="closeLightbox()">
+    <img src="" id="lightbox-img" style="max-width:90%;max-height:90%;">
+</div>
+<script src="js/main.js"></script>
 
 </body>
 </html>

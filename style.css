@@ -1,0 +1,38 @@
+
+:root {
+    --main-color: #1d3557;
+    --secondary-color: #457b9d;
+    --accent-color: #f1faee;
+    --text-color: #333;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    color: var(--text-color);
+    scroll-behavior: smooth;
+}
+
+header {
+    background: url('../img/header-bg.jpg') center/cover no-repeat;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Resto del CSS similar al anterior con variables */
